@@ -19,7 +19,11 @@ greaterThan(QT_MAJOR_VERSION, 4) {
     examples.depends += libqmlav
   }
 }
-QMAKE_CXXFLAGS += "-I c:/Users/dirkgr/Documents/ocd/offcamberdata/dependencies/win/QtAV/depends/include"
+
+win32 {
+  QMAKE_CXXFLAGS += "-I $$PWD/dependencies/win/include"
+}
+
 !no-examples {
   SUBDIRS += examples
   examples.depends += libqtav

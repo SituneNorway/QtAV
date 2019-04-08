@@ -129,7 +129,11 @@ android {
     }
   }
 }
-QMAKE_CXXFLAGS += "-I c:/Users/dirkgr/Documents/ocd/offcamberdata/dependencies/win/QtAV/depends/include"
+
+win32 {
+  QMAKE_CXXFLAGS += "-I $$PWD/../dependencies/win/include"
+}
+
 config_x11 {
   DEFINES += QTAV_HAVE_X11=1
   SOURCES *= filter/X11FilterContext.cpp
