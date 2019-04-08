@@ -64,7 +64,8 @@ Makefile*
 #dirs
 /bin*
 /lib*
-build
+/build/
+/build_release/
 Debug
 Release
 *.Debug
