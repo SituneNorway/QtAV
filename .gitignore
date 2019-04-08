@@ -66,6 +66,8 @@ Makefile*
 /lib*
 /build/
 /build_release/
+/ocd_build_release/
+/ocd_build_debug/
 Debug
 Release
 *.Debug
