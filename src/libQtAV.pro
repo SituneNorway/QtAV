@@ -133,6 +133,10 @@ android {
 win32 {
   QMAKE_CXXFLAGS += "-I $$PWD/../dependencies/win/include"
 }
+macx {
+  QMAKE_CXXFLAGS += "-I $$PWD/../dependencies/mac/include"
+  LIBS += "-L$$PWD/../dependencies/mac/lib"
+}
 
 config_x11 {
   DEFINES += QTAV_HAVE_X11=1

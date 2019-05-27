@@ -23,6 +23,10 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 win32 {
   QMAKE_CXXFLAGS += "-I $$PWD/dependencies/win/include"
 }
+macx {
+  QMAKE_CXXFLAGS += "-I $$PWD/dependencies/mac/include"
+  LIBS += "-L$$PWD/dependencies/mac/lib"
+}
 
 !no-examples {
   SUBDIRS += examples

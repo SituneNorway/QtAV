@@ -1,0 +1,2 @@
+Development and runtime files required by QtAV:
+ffmpeg 3.1. Build tool: https://github.com/wang-bin/build_ffmpeg 
